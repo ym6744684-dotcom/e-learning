@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luminary — Learn Without Limits</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">Luminary<span class="dot">.</span></a>
+      <nav class="nav-links">
+        <a href="#courses">Courses</a>
+        <a href="#categories">Categories</a>
+        <a href="#instructors">Instructors</a>
+        <a href="#testimonials">Reviews</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#" class="btn-ghost">Sign In</a>
+        <a href="#" class="btn-primary">Get Started</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#courses">Courses</a>
+      <a href="#categories">Categories</a>
+      <a href="#instructors">Instructors</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#" class="btn-primary mobile-cta">Get Started</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grain"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge"><i class="fa-solid fa-star fa-xs"></i> 50,000+ students worldwide</span>
+      <h1 class="hero-title">Learn Skills That<br /><em>Shape Tomorrow</em></h1>
+      <p class="hero-sub">Expert-led courses in tech, design, business, and beyond. Learn at your pace, on any device, and unlock your potential.</p>
+      <div class="hero-cta">
+        <a href="#courses" class="btn-primary large">Explore Courses</a>
+        <a href="#" class="btn-play">
+          <span class="play-icon"><i class="fa-solid fa-play fa-xs"></i></span>
+          Watch Demo
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>200+</strong><span>Courses</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>80+</strong><span>Expert Instructors</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>98%</strong><span>Satisfaction Rate</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="card-float card-f1">
+        <div class="cf-icon"><i class="fa-solid fa-pen-nib"></i></div>
+        <div class="cf-info"><strong>UI/UX Design</strong><span>12 lessons</span></div>
+      </div>
+      <div class="card-float card-f2">
+        <div class="cf-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="cf-info"><strong>Web Dev</strong><span>24 lessons</span></div>
+      </div>
+      <div class="card-float card-f3">
+        <div class="progress-mini">
+          <span>Your Progress</span>
+          <div class="bar"><div class="fill" style="width:72%"></div></div>
+          <span>72% complete</span>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <div class="hero-img-placeholder">
+          <div class="img-inner">
+            <i class="fa-solid fa-graduation-cap hero-grad-icon"></i>
+            <p>Start Learning Today</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="categories section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Browse by Topic</span>
+        <h2>Find Your <em>Perfect Path</em></h2>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card" style="--c:#FF6B6B">
+          <div class="cat-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>42 Courses</p>
+        </div>
+        <div class="cat-card" style="--c:#4ECDC4">
+          <div class="cat-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>Design & UX</h3>
+          <p>28 Courses</p>
+        </div>
+        <div class="cat-card" style="--c:#FFE66D">
+          <div class="cat-icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <h3>Data Science</h3>
+          <p>35 Courses</p>
+        </div>
+        <div class="cat-card" style="--c:#A8E6CF">
+          <div class="cat-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>Mobile Dev</h3>
+          <p>19 Courses</p>
+        </div>
+        <div class="cat-card" style="--c:#DDA0DD">
+          <div class="cat-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>AI & Machine Learning</h3>
+          <p>31 Courses</p>
+        </div>
+        <div class="cat-card" style="--c:#F0A500">
+          <div class="cat-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Business & Marketing</h3>
+          <p>25 Courses</p>
+        </div>
+        <div class="cat-card" style="--c:#7EC8E3">
+          <div class="cat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Cybersecurity</h3>
+          <p>16 Courses</p>
+        </div>
+        <div class="cat-card" style="--c:#B8D4FF">
+          <div class="cat-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h3>Cloud Computing</h3>
+          <p>22 Courses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED COURSES ===== -->
+  <section class="courses section" id="courses">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Top Picks</span>
+        <h2>Featured <em>Courses</em></h2>
+        <a href="#" class="view-all">View All <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+      </div>
+      <div class="filter-tabs">
+        <button class="tab active">All</button>
+        <button class="tab">Development</button>
+        <button class="tab">Design</button>
+        <button class="tab">Data Science</button>
+        <button class="tab">Business</button>
+      </div>
+      <div class="course-grid">
+
+        <div class="course-card">
+          <div class="course-thumb" style="--bg:#1a1a2e">
+            <i class="fa-brands fa-react thumb-fa-icon"></i>
+            <span class="course-badge">Bestseller</span>
+          </div>
+          <div class="course-body">
+            <span class="course-tag">Development</span>
+            <h3>Complete React Developer Bootcamp</h3>
+            <p>Master React, Hooks, Redux, and build real-world applications from scratch.</p>
+            <div class="course-meta">
+              <span class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </span>
+              <span class="rating-count">(4.9 · 3.2k)</span>
+            </div>
+            <div class="course-footer">
+              <div class="instructor-info">
+                <div class="avatar" style="background:#FF6B6B">JS</div>
+                <span>Jake Sullivan</span>
+              </div>
+              <div class="price">$49<span class="old-price">$99</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-thumb" style="--bg:#0f3460">
+            <i class="fa-brands fa-python thumb-fa-icon"></i>
+            <span class="course-badge new">New</span>
+          </div>
+          <div class="course-body">
+            <span class="course-tag">Data Science</span>
+            <h3>Python for Data Science & ML</h3>
+            <p>Learn Python, Pandas, NumPy, and build machine learning models step-by-step.</p>
+            <div class="course-meta">
+              <span class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </span>
+              <span class="rating-count">(4.8 · 2.8k)</span>
+            </div>
+            <div class="course-footer">
+              <div class="instructor-info">
+                <div class="avatar" style="background:#4ECDC4">AM</div>
+                <span>Aisha Mercer</span>
+              </div>
+              <div class="price">$59<span class="old-price">$129</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-thumb" style="--bg:#16213e">
+            <i class="fa-solid fa-pen-ruler thumb-fa-icon"></i>
+          </div>
+          <div class="course-body">
+            <span class="course-tag">Design</span>
+            <h3>UI/UX Design Fundamentals</h3>
+            <p>From wireframes to polished prototypes — design products users love in Figma.</p>
+            <div class="course-meta">
+              <span class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <span class="rating-count">(4.7 · 1.9k)</span>
+            </div>
+            <div class="course-footer">
+              <div class="instructor-info">
+                <div class="avatar" style="background:#DDA0DD">LP</div>
+                <span>Luna Park</span>
+              </div>
+              <div class="price">$39<span class="old-price">$89</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-thumb" style="--bg:#533483">
+            <i class="fa-brands fa-aws thumb-fa-icon"></i>
+            <span class="course-badge">Hot</span>
+          </div>
+          <div class="course-body">
+            <span class="course-tag">Cloud</span>
+            <h3>AWS Cloud Practitioner Certified</h3>
+            <p>Pass the AWS certification exam and launch your cloud computing career.</p>
+            <div class="course-meta">
+              <span class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </span>
+              <span class="rating-count">(4.9 · 1.5k)</span>
+            </div>
+            <div class="course-footer">
+              <div class="instructor-info">
+                <div class="avatar" style="background:#F0A500">RK</div>
+                <span>Raj Kumar</span>
+              </div>
+              <div class="price">$69<span class="old-price">$149</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-thumb" style="--bg:#2d6a4f">
+            <i class="fa-solid fa-mobile-screen thumb-fa-icon"></i>
+          </div>
+          <div class="course-body">
+            <span class="course-tag">Mobile</span>
+            <h3>Flutter & Dart: Full App Development</h3>
+            <p>Build beautiful cross-platform mobile apps for iOS and Android with Flutter.</p>
+            <div class="course-meta">
+              <span class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </span>
+              <span class="rating-count">(4.6 · 1.2k)</span>
+            </div>
+            <div class="course-footer">
+              <div class="instructor-info">
+                <div class="avatar" style="background:#A8E6CF">TC</div>
+                <span>Tom Chen</span>
+              </div>
+              <div class="price">$44<span class="old-price">$99</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-thumb" style="--bg:#b5179e">
+            <i class="fa-solid fa-brain thumb-fa-icon"></i>
+            <span class="course-badge new">New</span>
+          </div>
+          <div class="course-body">
+            <span class="course-tag">AI</span>
+            <h3>Generative AI & Prompt Engineering</h3>
+            <p>Master LLMs, prompt techniques, and build AI-powered applications.</p>
+            <div class="course-meta">
+              <span class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </span>
+              <span class="rating-count">(4.9 · 980)</span>
+            </div>
+            <div class="course-footer">
+              <div class="instructor-info">
+                <div class="avatar" style="background:#7EC8E3">SR</div>
+                <span>Sara Rhodes</span>
+              </div>
+              <div class="price">$79<span class="old-price">$159</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-text">
+          <span class="label">Why Luminary?</span>
+          <h2>Learning That <em>Actually Works</em></h2>
+          <p>We combine world-class instructors, hands-on projects, and a supportive community to help you grow faster than anywhere else.</p>
+          <ul class="why-list">
+            <li><span class="check"><i class="fa-solid fa-circle-check"></i></span> Learn from industry professionals with real-world experience</li>
+            <li><span class="check"><i class="fa-solid fa-circle-check"></i></span> Hands-on projects with portfolio-ready outcomes</li>
+            <li><span class="check"><i class="fa-solid fa-circle-check"></i></span> Flexible scheduling — learn at your own pace</li>
+            <li><span class="check"><i class="fa-solid fa-circle-check"></i></span> Certificate of completion recognized by top employers</li>
+            <li><span class="check"><i class="fa-solid fa-circle-check"></i></span> Lifetime access to course materials and updates</li>
+          </ul>
+          <a href="#" class="btn-primary">Start Learning Free</a>
+        </div>
+        <div class="why-cards">
+          <div class="why-card wc1">
+            <div class="wc-icon"><i class="fa-solid fa-trophy"></i></div>
+            <h4>Industry-Recognized Certificates</h4>
+            <p>Credentials that matter to employers worldwide.</p>
+          </div>
+          <div class="why-card wc2">
+            <div class="wc-icon"><i class="fa-solid fa-comments"></i></div>
+            <h4>Live Q&A Sessions</h4>
+            <p>Get your doubts cleared directly from instructors.</p>
+          </div>
+          <div class="why-card wc3">
+            <div class="wc-icon"><i class="fa-solid fa-infinity"></i></div>
+            <h4>Lifetime Updates</h4>
+            <p>Courses evolve with the industry. You never fall behind.</p>
+          </div>
+          <div class="why-card wc4">
+            <div class="wc-icon"><i class="fa-solid fa-earth-americas"></i></div>
+            <h4>Global Community</h4>
+            <p>50,000+ learners sharing, helping, and growing together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSTRUCTORS ===== -->
+  <section class="instructors section" id="instructors">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Meet the Experts</span>
+        <h2>Learn from the <em>Best</em></h2>
+      </div>
+      <div class="instructor-grid">
+        <div class="instructor-card">
+          <div class="inst-avatar" style="background: linear-gradient(135deg,#FF6B6B,#FFE66D)">JS</div>
+          <h3>Jake Sullivan</h3>
+          <span class="inst-role">Senior React Engineer @ Meta</span>
+          <p>10+ years building web applications. Taught 32k students.</p>
+          <div class="inst-stats">
+            <span><i class="fa-solid fa-star"></i> 4.9</span>
+            <span><i class="fa-solid fa-book-open"></i> 3 Courses</span>
+          </div>
+        </div>
+        <div class="instructor-card">
+          <div class="inst-avatar" style="background: linear-gradient(135deg,#4ECDC4,#44BBA4)">AM</div>
+          <h3>Aisha Mercer</h3>
+          <span class="inst-role">Data Scientist @ Google</span>
+          <p>PhD in ML. Research published in Nature. 28k students.</p>
+          <div class="inst-stats">
+            <span><i class="fa-solid fa-star"></i> 4.8</span>
+            <span><i class="fa-solid fa-book-open"></i> 4 Courses</span>
+          </div>
+        </div>
+        <div class="instructor-card">
+          <div class="inst-avatar" style="background: linear-gradient(135deg,#DDA0DD,#b5179e)">LP</div>
+          <h3>Luna Park</h3>
+          <span class="inst-role">Lead Designer @ Airbnb</span>
+          <p>Award-winning designer with 12 years in product design.</p>
+          <div class="inst-stats">
+            <span><i class="fa-solid fa-star"></i> 4.7</span>
+            <span><i class="fa-solid fa-book-open"></i> 2 Courses</span>
+          </div>
+        </div>
+        <div class="instructor-card">
+          <div class="inst-avatar" style="background: linear-gradient(135deg,#7EC8E3,#0077B6)">SR</div>
+          <h3>Sara Rhodes</h3>
+          <span class="inst-role">AI Research Lead @ OpenAI</span>
+          <p>Pioneering AI education. Speaker at NeurIPS & ICML.</p>
+          <div class="inst-stats">
+            <span><i class="fa-solid fa-star"></i> 4.9</span>
+            <span><i class="fa-solid fa-book-open"></i> 2 Courses</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Student Stories</span>
+        <h2>Real Results, <em>Real People</em></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <i class="fa-solid fa-quote-left testi-quote-icon"></i>
+          <p>Luminary helped me transition from a barista to a front-end developer in just 6 months. The React course was incredibly well-structured.</p>
+          <div class="testi-author">
+            <div class="t-avatar" style="background:#FF6B6B">MK</div>
+            <div><strong>Maria Kim</strong><span>Frontend Dev @ Shopify</span></div>
+          </div>
+        </div>
+        <div class="testi-card featured">
+          <i class="fa-solid fa-quote-left testi-quote-icon"></i>
+          <p>I passed my AWS certification on the first attempt thanks to the Luminary course. The practice tests were spot-on. Best investment I've made.</p>
+          <div class="testi-author">
+            <div class="t-avatar" style="background:#4ECDC4">DB</div>
+            <div><strong>David Brown</strong><span>Cloud Architect @ AWS</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <i class="fa-solid fa-quote-left testi-quote-icon"></i>
+          <p>The UX design course completely changed how I think about products. Luna's teaching style is clear, engaging, and deeply practical.</p>
+          <div class="testi-author">
+            <div class="t-avatar" style="background:#DDA0DD">PL</div>
+            <div><strong>Priya Lal</strong><span>Product Designer @ Spotify</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <div class="blob blob-cta"></div>
+      <h2>Ready to Start Your <em>Learning Journey?</em></h2>
+      <p>Join 50,000+ students already transforming their careers with Luminary.</p>
+      <div class="cta-btns">
+        <a href="#" class="btn-primary large"><i class="fa-solid fa-rocket"></i> Enroll Now — It's Free</a>
+        <a href="#courses" class="btn-ghost large"><i class="fa-solid fa-compass"></i> Browse Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">Luminary<span class="dot">.</span></a>
+          <p>Empowering learners everywhere with world-class education.</p>
+          <div class="socials">
+            <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <a href="#"><i class="fa-solid fa-code fa-fw"></i> Web Development</a>
+          <a href="#"><i class="fa-solid fa-chart-bar fa-fw"></i> Data Science</a>
+          <a href="#"><i class="fa-solid fa-pen-ruler fa-fw"></i> UI/UX Design</a>
+          <a href="#"><i class="fa-solid fa-robot fa-fw"></i> AI & ML</a>
+          <a href="#"><i class="fa-solid fa-shield-halved fa-fw"></i> Cybersecurity</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#"><i class="fa-solid fa-users fa-fw"></i> About Us</a>
+          <a href="#"><i class="fa-solid fa-briefcase fa-fw"></i> Careers</a>
+          <a href="#"><i class="fa-solid fa-rss fa-fw"></i> Blog</a>
+          <a href="#"><i class="fa-solid fa-newspaper fa-fw"></i> Press</a>
+          <a href="#"><i class="fa-solid fa-handshake fa-fw"></i> Partners</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#"><i class="fa-solid fa-circle-question fa-fw"></i> Help Center</a>
+          <a href="#"><i class="fa-solid fa-envelope fa-fw"></i> Contact</a>
+          <a href="#"><i class="fa-solid fa-lock fa-fw"></i> Privacy Policy</a>
+          <a href="#"><i class="fa-solid fa-file-lines fa-fw"></i> Terms of Service</a>
+          <a href="#"><i class="fa-solid fa-universal-access fa-fw"></i> Accessibility</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Luminary Learning. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart" style="color:var(--accent2)"></i> for curious minds everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Filter tabs
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+
+    // Navbar scroll shadow
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
+</body>
+</html>
